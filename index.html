@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yohan Peter - Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">YP</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Yohan Peter</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Data Scientist & ML Engineer</h2>
+                    <p class="hero-description">
+                        Transforming complex data into actionable insights through advanced analytics, 
+                        machine learning, and compelling visualizations.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="card card-1">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="card card-2">
+                            <i class="fas fa-brain"></i>
+                            <span>ML</span>
+                        </div>
+                        <div class="card card-3">
+                            <i class="fas fa-database"></i>
+                            <span>Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate data scientist with expertise in machine learning, statistical analysis, 
+                        and data visualization. With a strong foundation in both technical and business domains, 
+                        I specialize in turning complex datasets into meaningful insights that drive decision-making.
+                    </p>
+                    <p>
+                        My journey in data science began with a curiosity about patterns in data and has evolved 
+                        into a professional pursuit of creating intelligent solutions that solve real-world problems. 
+                        I believe in the power of data to transform businesses and improve lives.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>95%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="profile-placeholder">
+                            <img src="src/images/profile1.png" alt="Profile Picture" />
+                            <!-- <i class="fas fa-user"></i> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>R</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Deep Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Visualization</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Matplotlib</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Seaborn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Plotly</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>D3.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Sales Analytics Dashboard -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Sales Analytics Dashboard</h3>
+                        <div class="project-links">
+                            <!-- <a href="#" class="project-link"><i class="fab fa-github"></i></a> -->
+                            <a href="https://www.kaggle.com/code/yohanpeter/sbi-market-prediction" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Interactive dashboard analyzing sales performance across multiple regions with predictive analytics.
+                    </p>
+                    <!-- image  -->
+                    <div class="project-visualization">
+                        <!-- <canvas id="salesChart" width="300" height="200"></canvas> -->
+                        <img src="src/images/sbi-stock-prediction.png" alt="Sales Analytics Dashboard" />
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Plotly</span>
+                        <span class="tech-tag">Dash</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: Customer Segmentation -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Customer Segmentation Analysis</h3>
+                        <div class="project-links">
+                            <!-- <a href="#" class="project-link"><i class="fab fa-github"></i></a> -->
+                            <a href="https://www.kaggle.com/code/yohanpeter/march-mania-2025-notebook" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        ML-powered customer segmentation using clustering algorithms to identify distinct customer groups.
+                    </p>
+                    <div class="project-visualization">
+                        <!-- <div id="segmentationChart"></div> -->
+                        <img src="src/images/NBA.png" alt="NBA Player Segmentation" />
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">K-means</span>
+                        <span class="tech-tag">PCA</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Stock Price Prediction -->
+                <!-- <div class="project-card">
+                    <div class="project-header">
+                        <h3>Stock Price Prediction Model</h3>
+                        <div class="project-links">
+                            <!-- <a href="#" class="project-link"><i class="fab fa-github"></i></a> -->
+                            <a href="https://www.kaggle.com/code/yohanpeter/notebookb8558c9827" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        LSTM neural network model for predicting stock prices with time series analysis.
+                    </p>
+                    <div class="project-visualization">
+                        <!-- <canvas id="stockChart" width="300" height="200"></canvas> -->
+                        <img src="src/images/Bagpack.png" alt="Bagpack" />
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">LSTM</span>
+                        <span class="tech-tag">Time Series</span>
+                        <span class="tech-tag">Yahoo Finance</span>
+                    </div>
+                </div> -->
+
+                <!-- Project 4: Sentiment Analysis -->
+                <!-- <div class="project-card">
+                    <div class="project-header">
+                        <h3>Social Media Sentiment Analysis</h3>
+                        <div class="project-links">
+                            <!-- <a href="#" class="project-link"><i class="fab fa-github"></i></a> -->
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Real-time sentiment analysis of social media posts using NLP and deep learning.
+                    </p>
+                    <div class="project-visualization">
+                        <!-- <div id="sentimentChart"></div> -->
+                        <img src="src/images/sbi-stock-prediction.png" alt="Social Media Sentiment Analysis" />
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>yohanpeter2002@email.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7805001555</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Data Science Hub, Tech City</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/xpwrbqlz" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Yohan Peter. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html> 
