@@ -101,10 +101,9 @@ Edit `src/styles.css` to customize:
 
 The portfolio includes several interactive charts:
 
-1. **Sales Analytics Dashboard**: Line chart showing sales trends
-2. **Customer Segmentation**: Scatter plot with interactive circles
-3. **Stock Price Prediction**: Dual-line chart comparing predicted vs actual
-4. **Sentiment Analysis**: Interactive pie chart
+1. **SBI Stock Market Prediction (2026) – Real-Time Data Analysis**: Scraped and processed real-time stock data from Yahoo Finance to train regression models forecasting SBI stock trends for 2026. Implemented alert system offering buy/sell signals based on model insights; reduced manual monitoring efforts by 40%.
+2. **NCAA Basketball Tournament Outcome Prediction (2025)**: Predicted game outcomes using historical team performance and rankings, generating probabilities for 2,000 matchups over four seasons. Engineered advanced sports metrics and applied logistic regression and XGBoost, achieving competitive accuracy on tournament bracket forecasts.
+3. **Backpack Price Prediction**: Trained regression models to predict backpack prices using features like volume, material, and brand, achieving R² score of 0.87. Performed EDA and feature engineering on structured dataset, improving model performance by 15% over the baseline.
 
 ### Customizing Charts
 Edit `src/script.js` to modify chart data:
@@ -122,6 +121,24 @@ data: [65, 78, 90, 85, 95, 110] // Replace with your data
 4. **Projects Section**: Interactive project cards with visualizations
 5. **Contact Section**: Contact form and social links
 
+## 🏆 Featured Projects
+
+### SBI Stock Market Prediction (2026) – Real-Time Data Analysis
+[Kaggle Link: View Project](https://www.kaggle.com/code/yohanpeter/sbi-market-prediction)
+- Python, BeautifulSoup, Pandas, Scikit-learn, YFINANCE, LXML
+- Scraped and processed real-time stock data from Yahoo Finance to train regression models forecasting SBI stock trends for 2026.
+- Implemented alert system offering buy/sell signals based on model insights; reduced manual monitoring efforts by 40%.
+
+### NCAA Basketball Tournament Outcome Prediction (2025)
+[Kaggle Link: View Project](https://www.kaggle.com/code/yohanpeter/march-mania-2025-notebook)
+- Predicted game outcomes using historical team performance and rankings, generating probabilities for 2,000 matchups over four seasons.
+- Engineered advanced sports metrics and applied logistic regression and XGBoost, achieving competitive accuracy on tournament bracket forecasts.
+
+### Backpack Price Prediction
+[Kaggle Link: View Project](https://www.kaggle.com/code/yohanpeter/notebookb8558c9827)
+- Trained regression models to predict backpack prices using features like volume, material, and brand, achieving R² score of 0.87.
+- Performed EDA and feature engineering on structured dataset, improving model performance by 15% over the baseline.
+
 ## 📱 Responsive Design
 
 The website is fully responsive and includes:
@@ -137,36 +154,3 @@ The website is fully responsive and includes:
 - Safari 12+
 - Edge 79+
 
-## 🚀 Deployment
-
-### GitHub Pages
-1. Push your code to a GitHub repository
-2. Go to Settings > Pages
-3. Select source branch (usually `main`)
-4. Your site will be available at `https://username.github.io/repository-name`
-
-### Netlify
-1. Drag and drop the project folder to Netlify
-2. Your site will be deployed instantly
-3. Custom domain can be added in settings
-
-### Vercel
-1. Connect your GitHub repository to Vercel
-2. Deploy automatically on every push
-3. Get a custom domain and SSL certificate
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Feel free to fork this project and customize it for your own portfolio. If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
-
-## 📞 Support
-
-If you need help customizing this portfolio or have questions, feel free to reach out!
-
----
-
-**Built with ❤️ for the Data Science Community** "# Portfolio" 
